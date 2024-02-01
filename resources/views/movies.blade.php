@@ -20,5 +20,14 @@
                 <h1>Template Page</h1>
             </div>
         </header>
+        <main>
+            <ul>
+                @foreach (movies as movie)
+                    <li>
+                        {{ $movie-title }}
+                    </li>
+                @endforeach
+            </ul>
+        </main>
     </body>
 </html>
