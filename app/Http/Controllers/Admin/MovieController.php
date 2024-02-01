@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -13,6 +14,6 @@ class MovieController extends Controller
         $movies = Movie::all();
 
 
-        return view('index', [ 'movies' => $movies ] );
+        return view('admin.movies.index', [ 'movies' => $movies] );
     }
 }

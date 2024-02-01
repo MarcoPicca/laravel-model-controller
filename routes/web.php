@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Guest\PageController as GuestPageController;
-use App\Http\Controllers\Admin\PageController as AdminMovieController;
+use App\Http\Controllers\Admin\MovieController as AdminMovieController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,5 +14,4 @@ use App\Http\Controllers\Admin\PageController as AdminMovieController;
 |
 */
 
-Route::get('/', [ GuestPageController::class, 'index' ]);
-Route::get('/movies', [ AdminMovieController::class, 'movies' ]);
+Route::get('/', [ AdminMovieController::class, 'index' ]);

@@ -21,13 +21,7 @@
             </div>
         </header>
         <main>
-            <ul>
-                @foreach (movies as movie)
-                    <li>
-                        {{ $movie-title }}
-                    </li>
-                @endforeach
-            </ul>
+            @include('layouts/app')
         </main>
     </body>
 </html>

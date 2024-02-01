@@ -2,8 +2,12 @@
 
 @section('main-content')
 
-    <h1>
-        test
-    </h1>
+            <ul>
+                @foreach ($movies as $movie)
+                    <li>
+                        {{ $movie->title }}
+                    </li>
+                @endforeach
+            </ul>
 
 @endsection
